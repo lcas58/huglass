@@ -10,7 +10,7 @@
     "build": "gatsby build",
     "start:build": "npm run build",
     "start:server": "npm run develop",
-    "test:build": "npm run build",
+    "test:build": "NODE_ENV=production npm run build",
     "test:server": "npm run develop"
   },
   "engines": {
