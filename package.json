@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-serif-theme",
+  "name": "Huglass",
   "version": "1.2.0",
-  "author": "Robert Austin <rob@zerostatic.io>",
+  "author": "Luis Castillo",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

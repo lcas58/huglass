@@ -33,7 +33,7 @@ const Call = props => {
       </div>
       {props.showButton && (
         <div className="call-box-bottom">
-          <a href={data.contactJson.contact_button_link} className="button">Contact</a>
+          <a href=''className="button">Request a quote</a>
         </div>
       )}
     </div>

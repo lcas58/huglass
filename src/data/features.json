@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "/images/features/noun_branding_1885335.svg"
+    "title": "Request virtual quote",
+    "description": "Please include a detailed description, photos of the work to be done, and the location of your home or business.The more info you share in our form, the faster we can get to work.",
+    "image": "/images/features/noun-computer.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "/images/features/noun_The Process_1885341.svg"
+    "title": "Review Your Inquiry",
+    "description": "We will review your inquiry,and request more info if we need it.Then we’ll share an estimate or a bid via email.  Once you’ve accepted the quote, you’ll be added to the schedule and you’ll pay a retainer to hold the date scheduled.",
+    "image": "/images/features/noun-email.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "/images/features/noun_3d modeling_1885342.svg"
+    "title": "Hugo will get to work",
+    "description": "Once your scheduled date arrives, Hugo will arrive on site and provide you with the quality work you are looking for.",
+    "image": "/images/features/noun-construction.svg"
   }
 ]

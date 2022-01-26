@@ -1,11 +1,11 @@
 ---
-title: "Accounting"
+title: "StoreFronts"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 weight: 1
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
+We specialize in glass storefronts for retailers, including the creation of custom pieces and completion of repairs and replacements.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

@@ -1,12 +1,12 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "Home",
+        "url": "/",
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Services",
+        "url": "/services/",
         "weight": 3
     },
     {
