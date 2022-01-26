@@ -2,8 +2,10 @@
 FROM node:alpine
 
 RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get -y install autoconf automake libtool nasm make pkg-config git apt-utils
+
+RUN apt-get update \
+    && apt-get install autoconf libtool nasm libpng-dev automake pkg-config build-essential wget \
+    -yq --no-install-suggests --no-install-recommends --force-yes
 
 # Create app directory
 RUN mkdir -p /usr/src/app
