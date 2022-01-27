@@ -5,13 +5,8 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "test": "NODE_ENV=test PORT=4000 npm run-all test:*",
-    "start": "NODE_ENV=production  npm-run-all start:* ",
-    "build": "gatsby build",
-    "start:build": "npm run build",
-    "start:server": "npm run develop",
-    "test:build": "NODE_ENV=production npm run build",
-    "test:server": "npm run develop"
+    "start": "npm run develop",
+    "build": "gatsby build"
   },
   "engines": {
     "node": ">=14"

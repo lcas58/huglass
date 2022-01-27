@@ -1,33 +1,21 @@
-# Extending image
-FROM node:alpine
+#1. Node image for building frontend assets
+FROM node:alpine AS builder
 
+WORKDIR /app
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+#copy all files from current directory to working dir in image 
+COPY . .
 
-# Versions
-RUN npm -v
-RUN node -v
+RUN npm install && npm build
 
-# Install app dependencies
-COPY package.json /usr/src/app/
-COPY package-lock.json /usr/src/app/
+#2. Nginx stage to serve frontend assets
 
-RUN npm install
+FROM nginx:alpine
 
-# Bundle app source
-COPY . /usr/src/app
+WORKDIR /usr/share/nginx/html
+# Remove default nginx static assets
+RUN rm -rf ./*
 
-# Port to listener
-EXPOSE 3000
-
-# Environment variables
-ENV NODE_ENV production
-ENV PORT 3000
-ENV PUBLIC_PATH "/"
-
-RUN npm run start:build
-
-# Main command
-CMD [ "npm", "run","start:server"]
+COPY --from=builder /app/public .
+# Containers run nginx with global directives and daemon off
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

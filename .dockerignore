@@ -1,0 +1,2 @@
+#Ignore dependency files in node_modules 
+echo "node_modules" > .dockerignore
