@@ -1,12 +1,12 @@
 #1. Node image for building frontend assets
-FROM node:alpine AS builder
+FROM node:14 AS builder
 
 WORKDIR /app
 
 #copy all files from current directory to working dir in image 
 COPY . .
 
-RUN npm install && npm run build
+RUN yarn install && yarn build
 
 #2. Nginx stage to serve frontend assets
 
