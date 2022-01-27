@@ -33,7 +33,7 @@ const Call = props => {
       </div>
       {props.showButton && (
         <div className="call-box-bottom">
-          <a href=''className="button">Request a quote</a>
+          <a href='https://forms.gle/Sag1GhUSjuN6VYp5A'className="button">Request a quote</a>
         </div>
       )}
     </div>
