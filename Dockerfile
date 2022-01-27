@@ -6,7 +6,7 @@ WORKDIR /app
 #copy all files from current directory to working dir in image 
 COPY . .
 
-RUN npm install && npm build
+RUN npm install && npm run build
 
 #2. Nginx stage to serve frontend assets
 
